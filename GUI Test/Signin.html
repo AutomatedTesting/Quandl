@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://www.quandl.com/" />
+<title>Signin</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Signin</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>https://www.quandl.com</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Sign in</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Sign in</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Sign in</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>link=Create one</td>
+	<td>Create one</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=header &gt; h1</td>
+	<td>Log in</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Create one</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//div/form/div/label/div[2]/input</td>
+	<td>javascript{&quot;uvu&quot; + Math.floor(Math.random()*15000) ;}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//div/label[2]/div[2]/input</td>
+	<td>javascript{&quot;uvu&quot; + Math.floor(Math.random()*15000) + &quot;@gmail.com&quot;;}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//div/label[3]/div[2]/input</td>
+	<td>Qwer1234</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//label[4]/div[2]/input</td>
+	<td>Qwer1234</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[2]/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>6000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=section &gt; h1</td>
+	<td>Welcome to Quandl!</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=section &gt; h2</td>
+	<td>Your API key is:</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//section/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.call-to-action</td>
+	<td>Please confirm your email address to activate your account.</td>
+</tr>
+</tbody></table>
+</body>
+</html>
