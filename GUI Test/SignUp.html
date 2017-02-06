@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://www.quandl.com/" />
+<title>SignUp</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">SignUp</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>https://www.quandl.com</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Sign Up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=ember946</td>
+	<td>John Doe1</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>javascript{&quot;uvu&quot; + Math.floor(Math.random()*15000) + &quot;@gmail.com&quot;;}</td>
+	<td>j</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=ember949</td>
+	<td>${j}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=ember952</td>
+	<td>Johndoe1234</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ember957</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=section &gt; h2</td>
+	<td>Your API key is:</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=section &gt; h1</td>
+	<td>Welcome to Quandl!</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//section/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.call-to-action</td>
+	<td>Please confirm your email address to activate your account.</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.confirm-message</td>
+	<td>We sent an email to ${j} Please confirm your email address to activate your account. <br /> Resend email Change email</td>
+</tr>
+</tbody></table>
+</body>
+</html>
